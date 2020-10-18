@@ -6,72 +6,53 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Socratic Circle 3E</title>
-        <head>
 
-            <style>
+        <style>
 
-                @font-face{
-                    font-family: avenir;
-                    src: url("fonts/avenir.ttf");
-                }
+            @font-face{
+                font-family: avenir;
+                src: url("fonts/avenir.ttf");
+            }
+            @font-face{
+                font-family: madecanvas;
+                src: url("fonts/madecanvas.otf");
+            }
 
-                @font-face{
-                    font-family: madecanvas;
-                    src: url("fonts/madecanvas.otf");
-                }
+            body{
+                background-color: #111111;
+                color: #dcdcdc;
+                font-family: avenir;
+            }
+            #letter{
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                padding-left: 15%;
+                padding-right: 15%;
+                margin-bottom: 5%;
+            }
+            a{
+                text-decoration: none;
+                color: #dcdcdc;
+                font-size: 2em;
+                width: 100%;
+                padding: 2%;
+                text-align: right;
+                font-family: madecanvas;
+                opacity: 0;
+            }
+            p:not(.close){
+                font-size: 1.2em;
+            }
 
-                body{
-                    background-color: #111111;
-                    color: #dcdcdc;
-                    font-family: avenir;
-                }
-                #letter{
-                    display: none;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    min-height: 100vh;
-                    padding-left: 15%;
-                    padding-right: 15%;
-                    margin-bottom: 5%;
-                }
-                a{
-                    text-decoration: none;
-                    color: #dcdcdc;
-                    font-size: 2em;
-                    width: 100%;
-                    padding: 2%;
-                    text-align: right;
-                    font-family: madecanvas;
-/*                    visibility: hidden;*/
-/*                    display: none;*/
-                    opacity: 0;
-                }
-                p:not(.close){
-                    font-size: 1.2em;
-                }
+            .close{
+                width: 100%;
+            }
+        </style>
 
-                .close{
-                    width: 100%;
-                }
-
-                .hidden{
-                    /*                    display: none !important;*/
-                }
-
-            </style>
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script>
-                $(document).ready(function () {
-                    setTimeout(function() {
-                        $('a').fadeTo(3500, 1);
-                    }, 3000);
-                    $('div#letter').fadeIn(3500).css('display', 'flex');
-
-                });
-            </script>
-        </head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     </head>
 
@@ -92,5 +73,16 @@
             <a href="home.html">CONTINUE ></a>
 
         </div>
+
+        <script>
+            $(document).ready(function () {
+                setTimeout(function() {
+                    $('a').fadeTo(3500, 1);
+                }, 3000);
+                $('div#letter').fadeIn(3500).css('display', 'flex');
+
+            });
+        </script>
+        
     </body>
 </html>

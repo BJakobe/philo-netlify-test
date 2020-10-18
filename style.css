@@ -114,13 +114,6 @@ body{
     display: none;
 }
 
-/*
-hr{
-    width: 65%;
-    margin-top: 2%;
-}
-*/
-
 .portrait{
     height: 100vh;
     width: auto;
@@ -134,24 +127,6 @@ h1{
     font-family: madecanvas;
     font-weight: normal;
 }
-/*
-
-h2 {
-    width: 100%; 
-    border-bottom: 1px solid #dcdcdc; 
-    line-height: 0.1em;
-    font-family: didot;
-    letter-spacing: 5px;
-    top: 3%;
-    padding-top: 1.5%;
-    font-size: 30px;
-} 
-
-h2 span { 
-    background:#111111; 
-    padding: 0 20px; 
-}
-*/
 
 #arendt, #about{
     display: flex;

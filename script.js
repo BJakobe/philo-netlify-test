@@ -1,9 +1,23 @@
-$(document).ready(function () {
-            $('body').fadeIn(3500).css('display', 'block');
-
-        });
-
 $(document).ready(function(){
+    
+    $('body').fadeIn(3500).css('display', 'block');
+    
+    $('#arendt .links').hover(function(){
+        $(this).css('background-color', '#111111');
+        $(this).css('color', '#dcdcdc');
+    }, function(){
+        $(this).css('color', '#111111');
+        $(this).css('background-color', '#dcdcdc');
+    });
+    
+    $('#ricoeur .links').hover(function(){
+        $(this).css('color', '#111111');
+        $(this).css('background-color', '#dcdcdc');
+    }, function(){
+        $(this).css('background-color', '#111111');
+        $(this).css('color', '#dcdcdc');
+    });
+    
     $(window).scroll(function(){
         var light_pos = $('#arendt').offset().top;
         var light_height = $('#arendt').height();
@@ -27,5 +41,5 @@ $(document).ready(function(){
             $('.topnav a').removeClass('blackline');
         }
 
-    })
-})
+    });
+});

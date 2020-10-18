@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    
-    $('body').fadeIn(3500).css('display', 'block');
-    
+
+    $('body').fadeIn(2500).css('display', 'block');
+
     $('#arendt .links').hover(function(){
         $(this).css('background-color', '#111111');
         $(this).css('color', '#dcdcdc');
@@ -9,7 +9,7 @@ $(document).ready(function(){
         $(this).css('color', '#111111');
         $(this).css('background-color', '#dcdcdc');
     });
-    
+
     $('#ricoeur .links').hover(function(){
         $(this).css('color', '#111111');
         $(this).css('background-color', '#dcdcdc');
@@ -17,7 +17,15 @@ $(document).ready(function(){
         $(this).css('background-color', '#111111');
         $(this).css('color', '#dcdcdc');
     });
-    
+
+    setTimeout(function() {
+        $('.topnav').fadeTo(2000, 1);
+    }, 500);
+
+    setTimeout(function() {
+        $('#home p').fadeTo(2000, 1);
+    }, 1250);
+
     $(window).scroll(function(){
         var light_pos = $('#arendt').offset().top;
         var light_height = $('#arendt').height();

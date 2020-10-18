@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Socratic Circle 3E</title>
+        <head>
+
+            <style>
+
+                @font-face{
+                    font-family: avenir;
+                    src: url("fonts/avenir.ttf");
+                }
+
+                @font-face{
+                    font-family: madecanvas;
+                    src: url("fonts/madecanvas.otf");
+                }
+
+                body{
+                    background-color: #111111;
+                    color: #dcdcdc;
+                    font-family: avenir;
+                }
+                #letter{
+                    display: none;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    padding-left: 15%;
+                    padding-right: 15%;
+                    margin-bottom: 5%;
+                }
+                a{
+                    text-decoration: none;
+                    color: #dcdcdc;
+                    font-size: 2em;
+                    width: 100%;
+                    padding: 2%;
+                    text-align: right;
+                    font-family: madecanvas;
+/*                    visibility: hidden;*/
+/*                    display: none;*/
+                    opacity: 0;
+                }
+                p:not(.close){
+                    font-size: 1.2em;
+                }
+
+                .close{
+                    width: 100%;
+                }
+
+                .hidden{
+                    /*                    display: none !important;*/
+                }
+
+            </style>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    setTimeout(function() {
+                        $('a').fadeTo(3500, 1);
+                    }, 3000);
+                    $('div#letter').fadeIn(3500).css('display', 'flex');
+
+                });
+            </script>
+        </head>
+
+    </head>
+
+    <body>
+        <div id="letter" class="hidden">
+
+            <p>As humans, it is our obligation to relate to our fellow beings through speech and action. As (Christian) citizens, it is our duty to acknowledge our roles in the State and seek to lead it towards greater rationality while also exercising vigilance against the use of its powers. But, how can this be accomplished amidst the COVID-19 crisis?</p>
+
+            <p>The constraints that the threat of this pandemic has imposed upon the people has narrowed down their options to act against the abuse of the State’s powers. Nonetheless, being stuck at home does not stop anyone from situating themselves in the position of others, nor does it hinder anyone from acting for the benefit of those who are struggling. Sitting idly in the comforts of one’s own home while also being aware of what happens outside of it is a manifestation of their ignorance, indifference, and overflowing amount of privilege.  It is one thing to be informed, acting upon the information you have gathered is another.</p>
+
+            <p>The creation of this website was the action our group chose to take in hopes of answering the call of Hannah Arendt for us humans to act, and of Paul Ricoeur for us (Christian) citizens to be rational and be vigilant of the State. As today’s circumstances have influenced the people to make the most of the digital space, we have deemed it effective and useful to use a platform that can easily be accessed by those who are online. If these people are privileged enough to take up space in the virtual world, then such advantage can be used to take action.</p>
+
+            <p>This website was not made for the sole purpose of informing the others of what must be done to achieve necessary improvements in the State. What this website seeks to do is to inspire and urge the people to surpass the line that lies between being informed and taking action. We hope that as you read through the words of Arendt and Ricoeur and see how it can be connected to the socio-politico-ethical issues of today, you will realize what your duties are as a (Christian) citizen of the State, and be encouraged to take a rational action against its abuses while also taking into account the importance of being vigilant.</p>
+
+            <p class="close">— Jacob, Polo, Gilian, Enrico, Rhea</p>
+
+
+            <a href="home.html">CONTINUE ></a>
+
+        </div>
+    </body>
+</html>

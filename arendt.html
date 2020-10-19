@@ -6,6 +6,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Socratic Circle 3E</title>
+        
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <style>
             @font-face{
@@ -20,7 +22,7 @@
             html{
                 background-color: #111111;
             }
-            
+
             body{
                 display: none;
             }
@@ -37,11 +39,18 @@
             }
             img{
                 filter: grayscale(100%);
+                width: 40%;
+                margin: 1%;
             }
             h1{
                 font-family: didot;
                 font-size: 2.5em;
                 letter-spacing: 3px;
+            }
+            h2{
+                font-family: madecanvas;
+                font-weight: normal;
+                font-size: 2em;
             }
             p{
                 font-family: avenir;
@@ -59,129 +68,113 @@
                 border: 1px solid #dcdcdc;
                 letter-spacing: 3px;
             }
-
-            .container {
-                position: relative;
-                width: 49%;
-                padding: 0.5%;
-                float: left;
+            #articlelist{
+                display: flex;
+                flex-direction: column;
             }
-
-            .image {
-                float: left;
-                width: 100%;
+            .article{
+                margin-top: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 height: auto;
             }
 
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                transition: .5s ease;
-                background-color: rgb(17,17,17,0.5);
-                float: left;
-            }
-
-            .container:hover .overlay {
-                opacity: 1;
-            }
-
-            .text {
-                font-family: madecanvas;
-                letter-spacing: 2px;
+            a{
+                text-decoration: underline;
                 color: #dcdcdc;
-                font-size: 2em;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                text-align: center;
-                float: left;
             }
 
-            #pics{
-                padding-left: 5%;
-                min-height: 100vh;
-            }
+            @media(max-width:768px){
+                img{
+                    width:100%;
+                }
+                .article{
+                    flex-direction: column;
+                    height: auto;
+                }
 
-            @media(max-width: 768px){
-                .container{
-                    width: 99%;
+                #vico img, #deped img{
+                    order: 9;
+                }
+                p{
+                    text-align: center !important;
                 }
             }
-
         </style>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     </head>
 
     <body>
 
         <div id="main">
 
-            <h1>ARENDT: <br>ACTION TOWARDS NEW BEGINNINGS</h1><hr style="width: 100%;">
+            <h1>ARENDT: <br>ACTION TOWARDS NEW BEGINNINGS</h1>
+            <hr style="width: 100%;">
+            <p> Arendt argues that action is the highest of human activities. Linked below are some articles showing Filipino individuals that present themselves and relate with others through speech and action. In pursuit of Arendt's words, you can start taking action by donating to <a href="https://www.clickthecity.com/time-out/article/74950/10-charities-and-organizations-where-you-can-donate-this-2020/">these charities and organizations</a>. This is not the only way, though, that you can take part; we all have our own ways in fighting for the betterment of our selves and our country. Even the littlest decisions can have the greatest impacts. It's up to you.</p>
+            <hr style="width: 100%;">
 
-            <p>Ricouer emphasizes that our duty is to foster vigilance against abuse of power by the State. Often, this vigilance is exhibited through demonstrations. The objective of the protests is to express dissent or disapproval over an issue where it might be violating its democratic essence of inclusivity, a failure to take opposite sides into serious deliberation. Marginalized institutions fall victim as they are suppressed.</p>
-
-            <p>Recent events have accelerated the express for dissent as a multitude of events bring dissatisfaction for actions that involve the nation’s interest. With the onset of the quarantine lockdown, assemblies have shifted towards the virtual platform. Examples of these issues were reported by various media outlets once it became apparent in social media, where sentiments are easily expressed and received. Click on the images below to view such news reports.</p><hr style="width: 100%;">
-
-            <div class="pics">
-
-
-                <a href="https://newsinfo.inquirer.net/1300803/deped-ched-asked-to-initiate-academic-freeze-until-virus-mass-testing-is-conducted"><div class="container">
-                    <img src="photos/freeze.jpg" style="filter: contrast(80%) grayscale(100%)" class="image">
-                    <div class="overlay">
-                        <div class="text">Academic Freeze</div>
+            <div id="articlelist">
+                <div class="article" id="vico">
+                    <img src="photos/vico.jpg" class="photos" data-aos="fade-right">
+                    <div class="description"  data-aos="fade-down"><h2>A Distinction and <br>an Inspiration of One</h2>
+                        <p style="text-align: left;">As a candidate, Vico Sotto pledges a different type of governance in the city. He makes himself distinct from the previously elected officials, where the long period of Eusebio’s dynastic ruling had made its constituents desire for a change. Furthermore, he stated that, “if we keep building momentum, it’s going to be very difficult to stop that ball from rolling,” in hopes that he leaves behind a legacy of good governance that inspires other politicians. This shows how Vico Sotto can lead an action that could forge a chain of similar actions.</p>
+                        <a href="https://newsinfo.inquirer.net/1118422/millennial-vico-sotto-wins-longshot-bid-for-pasig-mayor">Read More ></a>
                     </div>
-                    </div></a>
+                </div>
 
-                <div><a href="https://newsinfo.inquirer.net/1332699/robredo-on-pemberton-amnesty-kapag-mayaman-at-nasa-poder-malaya"><div class="container">
-                    <img src="photos/pemberton.jpg" class="image">
-                    <div class="overlay">
-                        <div class="text">Presidential Pardon to Pemberton</div>
+                <div class="article">
+
+                    <div class="description" data-aos="fade-down"><h2>Fabrication and Destruction <br>of Nature</h2>
+                        <p style="text-align: right;">Another issue that was brought up recently was the acquisition of dolomite sand to be used for the beautification of Manila Bay. The pulverized dolomite rock was sourced from Alcoy, Cebu as a substitute for sand and gravel. However, the acquisition of the sand was detrimental to the ecology of the surrounding mining site and the fine particles pose health-related issues. Moreover, marine scientists elaborated that the dolomite sand will not address the environmental issues of Manila Bay, implying that the utilization of it is pointless. Instead, they recommended the use of wastewater treatment plants to address the environmental problems of Manila Bay. The issue presented is the treatment towards natural resources only to result in futility, whereas other means and resources are dismissed.</p>
+                        <a href="https://news.abs-cbn.com/spotlight/10/01/20/up-marine-scientists-explain-why-dumping-dolomite-cant-solve-manila-bay-problems">Read More></a>
                     </div>
-                    </div></a></div>
+                    <img src="photos/mangroves.jpg" class="photos" data-aos="fade-left">
+                </div>
 
-                <div><a href="https://newsinfo.inquirer.net/1286569/terror-bill-critics-march-despite-quarantine"><div class="container">
-                    <img src="photos/terrorbill.jpg" class="image">
-                    <div class="overlay">
-                        <div class="text">March against Terror Bill</div>
+                <div class="article" id="deped">
+
+                    <img src="photos/deped.jpg" class="photos"  data-aos="fade-right">
+                    <div class="description" data-aos="fade-down"><h2>The Need for the Artificial</h2>
+                        <p style="text-align: left;">The pandemic has forced the country to suspend gatherings in hopes to halt the spread of the disease. This meant that schools cannot hold on-site classes and continuation of it will require a remote form of learning. With the provision of online modules and classes, a student is required to be connected to the internet in some form of digital device. DepEd issued minimum specifications of these devices for online learning. Despite the optimistic outlook of the government on online classes, predicaments are bound to appear as it is being implemented for the first time. Accessibility is a concern as some households do not have means to acquire devices and maintain stable connections that are fundamental to online learning. Because of the current situation, Filipinos are now compelled to have the need for an artificial product that serves as a link to their other needs.</p>
+                        <a href="https://mb.com.ph/2020/09/18/common-problems-that-occur-during-online-classes/">Read More></a>
                     </div>
-                    </div></a></div>
+                </div>
 
-                <div><a href="https://interaksyon.philstar.com/politics-issues/2020/08/18/175198/why-mega-manila-gcq-return-not-welcomed-by-some-filipinos/"><div class="container">
-                    <img src="photos/quarantine.jpg" style="filter: contrast(80%) grayscale(100%)" class="image">
-                    <div class="overlay">
-                        <div class="text">Community Quarantine</div>
+                <div class="article">
+                    <div class="description" data-aos="fade-down"><h2>To Promise is to Expect</h2>
+                        <p style="text-align: right;">As the government imposed lockdown, the majority of Filipino households are left without a source of income. The government proposes a guarantee of subsidy to informal workers keeping them fed amidst the pandemic. In turn, this relieves them of the anxiety of obtaining a source of income since most of them are paid by the hour. Also, this makes poverty-stricken citizens hopeful of the government’s plans in mitigating the adverse effects of the pandemic, whereas lack of plans would provide insecurity among the families and uncertainty of the country’s direction in economic, social, political, and personal aspects.</p>
+                        <a href="https://newsinfo.inquirer.net/1247244/poor-families-to-get-up-to-p8000-cash-subsidy-from-covid-19-bill">Read More></a>
                     </div>
-                    </div></a></div>
-
+                    <img src="photos/cashaid.jpg" class="photos"  data-aos="fade-left">
+                </div>
             </div>
 
-            <a href="home.html#ricoeur" id="back">&lt; BACK</a>
+            <a href="home.html#ricoeur" id="back" data-aos="zoom-in">&lt; BACK</a>
 
         </div>
 
         <script>
+            
+            AOS.init({duration: 1500,});
+            $(window).on('load', function () {
+                AOS.refresh();
+            });
+            window.addEventListener('load', AOS.refresh());
 
             $(document).ready(function () {
-                
+
                 $('body').fadeIn(2000);
-                
+
                 $('#back').hover(function(){
-                    $(this).css('background-color', '#111111');
-                    $(this).css('color', '#dcdcdc');
-                }, function(){
-                    $(this).css('color', '#111111');
                     $(this).css('background-color', '#dcdcdc');
+                    $(this).css('color', '#111111');
+                }, function(){
+                    $(this).css('color', '#dcdcdc');
+                    $(this).css('background-color', '#111111');
                 });
             });
         </script>

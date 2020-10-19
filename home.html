@@ -29,7 +29,7 @@
                 </div></navbar>
         </header>
 
-        <div id="home">
+        <div id="home" data-aos="zoom-out">
             <img class="desktop" src="photos/home.png" alt="THE INTERHUMAN AND THE INTRAHUMAN.png">
             <img class="mobile" src="photos/mobile.png" alt="THE INTERHUMAN AND THE INTRAHUMAN.png">
             <p style="font-size: 1.3em; letter-spacing: 3px; position: absolute; bottom: 0; opacity: 0;">Scroll ↓ Down</p>
@@ -44,7 +44,7 @@
                     <p class="quote" style="text-align: right; padding-right: 2%; padding-left: 15%;">Action, with all its uncertainties, is like an ever-present reminder that men, though they must die, are not born in order to die but in order to begin something new.</p><hr class="after">
                 </div>
                 <div data-aos="fade-down">
-                    <p class="explanation arendte">What makes action the highest human activity, according to Arendt, is its sense of freedom. While labor and work are distinct from one another, what makes them similar is that both are rooted from need for survival. People apply for different jobs primarily, in order to earn a living. Both are unfree in a sense that in labor and work there are constraints in what they are doing. An example would be an artist tasked to make a specific artwork based on the client’s wants/needs. But it is in action where we can be truly free thus truly human. </p><p class="explanation arendte">The freedom seen in action for Arendt, means the capability of humans to do something new; that humans are born to begin something new, unexpected or unique into this world. Every human is unique from one another which is why it is possible for us to do the unexpected, or something different from the ordinary. </p>
+                    <p class="explanation arendte">What makes action the highest human activity, according to Arendt, is its sense of freedom. While labor and work are distinct from one another, they are similar in that both are rooted from the need for survival. People apply for different jobs primarily in order to earn a living. Both are unfree in a sense that in labor and work, there are constraints in what they are doing. An example would be an artist tasked to make a specific artwork based on a client’s wants/needs. But it is in action where we can be truly free and thus truly human. </p><p class="explanation arendte">The freedom seen in action for Arendt, means the capability of humans to do something new; that humans are born to begin something new, unexpected or unique into this world. Every human is unique from one another which is why it is possible for us to do the unexpected, or something different from the ordinary. </p>
                 </div>
 
                 <a href="#" class="links" style="color: #111111;" data-aos="zoom-in">MAKIALAM ></a>
@@ -59,7 +59,7 @@
                     <p class="quote" style="text-align: left; padding-right: 15%; padding-left: 3%;">We ought to simultaneously improve the political institution in the direction of greater rationality and to exercise vigilance against the abuse of power inherent in State power.</p><hr class="after">
                 </div>
                 <div data-aos="fade-down">
-                    <p class="explanation ricoeure">If you look at the current situation of the Philippines right now, a lot of things the government has done has directly or indirectly impacted the freedom of speech of many Filipinos (e.g. pandemic response, Anti-Terror Bill, President Duterte unprofessionally airing out his grievances to his critics). This is directly going against Ricoeur’s teaching on our double duty as Christians, as these events have been limiting our ability to demand better from the government. Another issue is the fact that many Christians in the Philippines blindly support these abuses of power without critically thinking of their own double duty, as we can see these people even going against the statement of the CBCP on the Anti-Terror bill or even supporting extra-judicial killings</p><p class="explanation ricoeure">As of right now the approval rating of President Duterte is at 91%, which is impossible without the blind support of many Filipinos, who do not think critically about his presidency or about the rampant abuse of power that is happening. Right now, more than ever, we need to be applying Ricouer’s teachings through our own actions, no matter how much we are being silenced. Opposition from the State power means that they want to gain control back, and that is more than enough affirmation to be fighting even harder.</p>
+                    <p class="explanation ricoeure">If you look at the current situation of the Philippines right now, a lot of the government's recent actions have directly or indirectly impacted the freedom of speech of many Filipinos (e.g. pandemic response, Anti-Terror Bill, President Duterte unprofessionally airing out his grievances to his critics). This directly goes against Ricoeur’s teaching on our double duty as Christians as these events limit our ability to demand better from the government. Another issue is that many Christians in the Philippines blindly support these abuses of power without critically thinking of their own double duty. This can be seen on people  going against the statement of the CBCP on the Anti-Terror bill or even supporting extra-judicial killings</p><p class="explanation ricoeure">Currently, the approval rating of President Duterte is at 91 percent, which seems impossible without the blind support of many Filipinos who do not think critically about his presidency or about the rampant abuse of power that is happening. Right now, more than ever, we need to apply Ricouer’s teachings through our own actions, no matter how much we are being silenced. Opposition from the State power means that they want to gain control back, and that is more than enough affirmation to fight even harder.</p>
                 </div>
 
                 <a href="ricoeur.html" class="links" style=" color: #dcdcdc;" data-aos="zoom-in">MAKIALAM ></a>
@@ -79,6 +79,7 @@
             $(window).on('load', function () {
                 AOS.refresh();
             });
+            window.addEventListener('load', AOS.refresh());
         </script>
 
     </body>

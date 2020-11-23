@@ -3,6 +3,8 @@
 
     <head>
 
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Socratic Circle 3E</title>
@@ -50,13 +52,13 @@
             .close{
                 width: 100%;
             }
-            
+
             @media(max-width: 768px){
                 #letter{
                     padding: 5% 10%;
                 }
             }
-            
+
         </style>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -89,7 +91,17 @@
                 $('div#letter').fadeIn(3500).css('display', 'flex');
 
             });
+
+            if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                    if (!user) {
+                        window.netlifyIdentity.on("login", () => {
+                            document.location.href = "/admin/";
+                        });
+                    }
+                });
+            }
         </script>
-        
+
     </body>
 </html>

@@ -4,7 +4,9 @@ backend:
     
 media_folder: "photos/uploads" # Media files will be stored here
 media_library:
-    name: uploads
+    name: uploadcare
+    config:
+        publicKey: demopublickey
 
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
